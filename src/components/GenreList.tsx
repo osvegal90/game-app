@@ -27,24 +27,24 @@ const GenreList = ({ onSelectGenre, selectedGenre }: Props) => {
         Genres
       </Heading>
       <List>
-        {data.map((g) => (
-          <ListItem key={g.id} paddingY={"5px"}>
+        {data?.results.map((genre) => (
+          <ListItem key={genre.id} paddingY={"5px"}>
             <HStack>
               <Image
                 objectFit={"cover"}
                 boxSize={"32px"}
                 borderRadius={8}
-                src={getCroppedImageUrl(g.image_background)}
+                src={getCroppedImageUrl(genre.image_background)}
               />
               <Button
                 whiteSpace={"normal"}
                 textAlign={"left"}
                 fontSize={"lg"}
-                fontWeight={selectedGenre?.id === g.id ? "bold" : "normal"}
+                fontWeight={selectedGenre?.id === genre.id ? "bold" : "normal"}
                 variant={"link"}
-                onClick={() => onSelectGenre(g)}
+                onClick={() => onSelectGenre(genre)}
               >
-                {g.name}
+                {genre.name}
               </Button>
             </HStack>
           </ListItem>
