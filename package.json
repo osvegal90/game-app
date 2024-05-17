@@ -21,9 +21,11 @@
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-icons": "5.2.1",
-    "react-infinite-scroll-component": "6.1"
+    "react-infinite-scroll-component": "6.1",
+    "zustand": "^4.5.2"
   },
   "devDependencies": {
+    "@types/ms": "0.7.34",
     "@types/react": "18.2.66",
     "@types/react-dom": "18.2.22",
     "@typescript-eslint/eslint-plugin": "7.2.0",
@@ -33,7 +35,6 @@
     "eslint-plugin-react-hooks": "4.6.0",
     "eslint-plugin-react-refresh": "0.4.6",
     "typescript": "5.2.2",
-    "vite": "5.2.0",
-    "@types/ms": "0.7.34"
+    "vite": "5.2.0"
   }
 }
