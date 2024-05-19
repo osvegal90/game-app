@@ -1,6 +1,4 @@
-import axios, { AxiosRequestConfig, CanceledError } from "axios";
-
-export { CanceledError };
+import axios, { AxiosRequestConfig } from "axios";
 
 export interface FetchResponse<T> {
   count: number;
